@@ -3,7 +3,9 @@
 namespace Acciona\Exceptions;
 
 use Exception;
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Validation\ValidationException;
 
 class Handler extends ExceptionHandler
 {
@@ -46,6 +48,10 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        if($exception instanceof ModelNotFoundException)
+            return response()->json(['status' => false, 'message' => 'Resource not found'], 404);
+        if ($exception instanceof ValidationException)
+            return response()->json(['status' => false, 'message' => 'The given data was invalid.' , 'data' => $exception->errors()], 422);
         return parent::render($request, $exception);
     }
 }

@@ -5,10 +5,14 @@ use Acciona\Http\Api\Comercial\Contracts\IClientDataSunat;
 use Acciona\Http\Api\Comercial\Requests\ClientStoreRequest;
 use Acciona\Http\Api\Comercial\Contracts\IClient;
 use Acciona\Http\Controllers\Controller;
+use Acciona\Http\Requests\ClientRequest;
+use Acciona\Models\Client;
 use Illuminate\Database\QueryException;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Exception;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\ValidationException;
 
 class ClientController extends Controller
 {
@@ -21,11 +25,8 @@ class ClientController extends Controller
         $this->IClientDataSunat = $IClientDataSunat;
     }
 
-    public function store(Request $request)
+    public function store(ClientStoreRequest $request)
     {
-        /*$this->validate($request,[
-            'ruc' => 'required|unique:pgsql.comercial.clients',
-        ]);*/
         $error = null;
         $response = null;
         try{

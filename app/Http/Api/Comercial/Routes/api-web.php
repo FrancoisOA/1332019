@@ -15,4 +15,9 @@ Route::group(['prefix' => 'commercial'], function ()
         Route::get('user/{id}/clients', 'ClientController@getClientsByUser')->where('id','[1-9][0-9]*');
         Route::resource('client-extra-data', 'ClientExtraDataController')->only(['store']);
     });
+
+    Route::group(['prefix' => 'quote'], function ()
+    {
+        
+    });
 });

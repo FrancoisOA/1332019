@@ -165,6 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Maatwebsite\Excel\ExcelServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -183,7 +184,8 @@ return [
          * API Service Provider
          */
         Acciona\Http\Api\Base\Providers\ServiceOrchestration::class,
-        Acciona\Http\Api\Comercial\Providers\ServiceOrchestration::class,
+        Acciona\Http\Api\Commercial\Providers\ServiceOrchestration::class,
+        Acciona\Http\Api\Principal\Providers\ServiceOrchestration::class,
 
     ],
 
@@ -233,7 +235,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-        'HelperUploadFile' => Acciona\Helpers\HelperUploadFile::class
+        'HelperUploadFile' => Acciona\Helpers\HelperUploadFile::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
 ];

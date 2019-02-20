@@ -49,7 +49,6 @@ return [
         ],
         'fileServer' => [
             'driver' => 'local',
-            /*'root' => str_replace('api', 'fileServer', base_path()),*/
             'root' => env('ROOT_FILE_SERVER', 'defaultServer'),
             'url' => env('APP_URL').'/storage',
         ],

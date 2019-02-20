@@ -7,7 +7,8 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 
 class RouteServiceProvider extends ServiceProvider
 {
-    protected $namespaceApiComercial = 'Acciona\Http\Api\Comercial\Controllers';
+    protected $namespaceApiCommercial = 'Acciona\Http\Api\Commercial\Controllers';
+    protected $namespaceApiPrincipal = 'Acciona\Http\Api\Principal\Controllers';
     protected $namespaceApiBase = 'Acciona\Http\Api\Base\Controllers';
     protected $namespaceExternalApi = 'Acciona\Http\ApiExternal\Controllers';
 
@@ -30,26 +31,44 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        $this->mapApiComercialWebRoutes();
-        $this->mapApiComercialMobileRoutes();
+        $this->mapApiCommercialWebRoutes();
+        $this->mapApiCommercialMobileRoutes();
+        $this->mapApiPrincipalWebRoutes();
+        $this->mapApiPrincipalMobileRoutes();
         $this->mapApiBaseRoutes();
         $this->mapExternalApiRoutes();
     }
 
-    protected function mapApiComercialWebRoutes()
+    protected function mapApiCommercialWebRoutes()
     {
         Route::prefix('api-web')
             ->middleware('api')
-            ->namespace($this->namespaceApiComercial)
-            ->group(base_path('app/Http/Api/Comercial/Routes/api-web.php'));
+            ->namespace($this->namespaceApiCommercial)
+            ->group(base_path('app/Http/Api/Commercial/Routes/api-web.php'));
     }
 
-    protected function mapApiComercialMobileRoutes()
+    protected function mapApiCommercialMobileRoutes()
     {
         Route::prefix('api')
             ->middleware('api')
-            ->namespace($this->namespaceApiComercial)
-            ->group(base_path('app/Http/Api/Comercial/Routes/api-mobile.php'));
+            ->namespace($this->namespaceApiCommercial)
+            ->group(base_path('app/Http/Api/Commercial/Routes/api-mobile.php'));
+    }
+
+    protected function mapApiPrincipalWebRoutes()
+    {
+        Route::prefix('api-web')
+            ->middleware('api')
+            ->namespace($this->namespaceApiPrincipal)
+            ->group(base_path('app/Http/Api/Principal/Routes/api-web.php'));
+    }
+
+    protected function mapApiPrincipalMobileRoutes()
+    {
+        Route::prefix('api')
+            ->middleware('api')
+            ->namespace($this->namespaceApiPrincipal)
+            ->group(base_path('app/Http/Api/Principal/Routes/api-mobile.php'));
     }
 
     protected function mapExternalApiRoutes()
@@ -62,8 +81,7 @@ class RouteServiceProvider extends ServiceProvider
 
     protected function mapApiBaseRoutes()
     {
-        Route::prefix('api-base')
-            ->middleware('api')
+        Route::middleware('api')
             ->namespace($this->namespaceApiBase)
             ->group(base_path('app/Http/Api/Base/Routes/routes.php'));
     }

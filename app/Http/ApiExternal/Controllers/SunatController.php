@@ -1,7 +1,7 @@
 <?php
 namespace Acciona\Http\ApiExternal\Controllers;
 
-use Acciona\Http\Api\Comercial\Contracts\IClientDataSunat;
+use Acciona\Http\Api\Commercial\Contracts\IClientDataSunat;
 use GuzzleHttp\Exception\RequestException;
 use Acciona\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Log;

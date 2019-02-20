@@ -12,8 +12,9 @@ class FileController extends Controller
         return HelperUploadFile::download($path);
     }
 
-    public function preview()
+    public function preview(string $module, string $name_file)
     {
-
+        $path = $module . '/' . $name_file;
+        return HelperUploadFile::preview($path);
     }
 }

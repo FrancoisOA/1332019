@@ -57,4 +57,14 @@ class HelperUploadFile
         $new_path = env('ROOT_FILE_SERVER') . '/' . $path;
         return response()->download($new_path);
     }
+
+    public static function preview(string $path, string $disk = 'fileServer')
+    {
+        $exist = Storage::disk($disk)->exists($path);
+        if(!$exist)
+            return "No existe el archivo!";
+
+        $file = Storage::disk('fileServer')->get($path);
+        return response($file, 200)->header('Content-Type', 'image/jpeg');
+    }
 }

@@ -186,6 +186,7 @@ return [
         Acciona\Http\Api\Base\Providers\ServiceOrchestration::class,
         Acciona\Http\Api\Commercial\Providers\ServiceOrchestration::class,
         Acciona\Http\Api\Principal\Providers\ServiceOrchestration::class,
+        Acciona\Http\Api\Comun\Providers\ServiceOrchestration::class,
 
     ],
 

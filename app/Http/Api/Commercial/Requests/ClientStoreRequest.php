@@ -14,9 +14,8 @@ class ClientStoreRequest extends FormRequest
     {
         return [
             'name'      => 'required',
-            'contact'   => 'required',
-            'phone'     => 'required|numeric',
-            'email'     => 'required|email',
+            'phone'     => 'required',
+            /*'email'     => 'email',*/
             'address'   => 'required',
             'ruc'       => 'required|unique:pgsql.commercial.clients',
             'user_id'   => 'required|numeric|exists:pgsql.users.users,usersid',
@@ -27,11 +26,11 @@ class ClientStoreRequest extends FormRequest
     {
         return [
             'name.required'    => 'El :attribute es requerido',
-            'contact.required' => 'El :attribute es requerido',
+            /*'contact.required' => 'El :attribute es requerido',*/
             'phone.required'   => 'El :attribute es requerido',
-            'phone.numeric'    => 'El :attribute acepta solo números',
-            'email.required'   => 'El :attribute es requerido',
-            'email.email'      => 'Escriba un :attribute válido',
+            /*'phone.numeric'    => 'El :attribute acepta solo números',*/
+            /*'email.required'   => 'El :attribute es requerido',*/
+            /*'email.email'      => 'Escriba un :attribute válido',*/
             'address.required' => 'El :attribute es requerido',
             'ruc.required'     => 'El :attribute es requerido',
             'ruc.unique'       => 'El :attribute ya se encuentra registrado',

@@ -15,7 +15,7 @@ class CommercialController extends Controller
 
     public function getAllCommercials(int $companyId)
     {
-        $data = $this->IUser->getAllCommercials($companyId);
+        $data = $this->IUser->getUserByCargo($companyId, [2]);
         return $this->responseSuccess($data);
     }
 }

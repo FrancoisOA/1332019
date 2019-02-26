@@ -15,7 +15,9 @@ class PortController extends Controller
 
     public function searchPorts()
     {
-        $data = $this->IPort->searchPorts(request()->get('text'));
+        $text    = request()->get('text');
+        $port    = request()->get('port');
+        $data    = $this->IPort->searchPorts($text, $port);
         return $this->responseSuccess($data);
     }
 }

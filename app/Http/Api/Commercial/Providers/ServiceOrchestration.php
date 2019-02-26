@@ -6,12 +6,9 @@ use Acciona\Http\Api\Commercial\Repositories\RepoClientExtraData;
 use Acciona\Http\Api\Commercial\Repositories\RepoComment;
 use Acciona\Http\Api\Commercial\Repositories\RepoClient;
 
-use Acciona\Models\Commercial\{
-    ClientDataSunat,
-    ClientExtraData,
-    Comment,
-    Client
-};
+use Acciona\Http\Api\Commercial\Repositories\RepoFactor;
+use Acciona\Http\Api\Commercial\Repositories\RepoUnitMeasure;
+use Acciona\Models\Commercial\{ClientDataSunat, ClientExtraData, Comment, Client, Factor, UnitMeasure};
 
 use Illuminate\Support\ServiceProvider;
 
@@ -34,6 +31,14 @@ class ServiceOrchestration extends ServiceProvider
 
         $this->app->bind('Acciona\Http\Api\Commercial\Contracts\IClientExtraData', function (){
             return new RepoClientExtraData(new ClientExtraData);
+        });
+
+        $this->app->bind('Acciona\Http\Api\Commercial\Contracts\IFactor', function (){
+            return new RepoFactor(new Factor);
+        });
+
+        $this->app->bind('Acciona\Http\Api\Commercial\Contracts\IUnitMeasure', function (){
+            return new RepoUnitMeasure(new UnitMeasure);
         });
     }
 }

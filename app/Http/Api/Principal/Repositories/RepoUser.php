@@ -12,8 +12,8 @@ class RepoUser implements IUser
         $this->model = $model;
     }
 
-    public function getAllCommercials(int $companyId)
+    public function getUserByCargo(int $companyId, array $cargoIds)
     {
-        return $this->model->selectCodeAndName()->getActives()->getCommercials()->byCompany($companyId)->get();
+        return $this->model->selectCodeAndName()->getActives()->getByCargo($cargoIds)->byCompany($companyId)->get();
     }
 }

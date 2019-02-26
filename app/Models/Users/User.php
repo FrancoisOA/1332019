@@ -13,9 +13,9 @@ class User extends Model
         return $query->where('v_estado', 'ACTIVADO');
     }
 
-    public function scopeGetCommercials($query)
+    public function scopeGetByCargo($query, array $cargoIds)
     {
-        return $query->where('cargoid', 2);
+        return $query->whereIn('cargoid', $cargoIds);
     }
 
     public function scopeByCompany($query, int $companyId)
@@ -25,6 +25,6 @@ class User extends Model
 
     public function scopeSelectCodeAndName($query)
     {
-        return $query->selectRaw("usersid as id, concat(v_apellido_paterno, ' ', v_apellido_materno, ' ', v_nombre) as name");
+        return $query->selectRaw("usersid as code, concat(v_apellido_paterno, ' ', v_apellido_materno, ' ', v_nombre) as description");
     }
 }

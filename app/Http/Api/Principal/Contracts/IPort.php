@@ -3,5 +3,5 @@ namespace Acciona\Http\Api\Principal\Contracts;
 
 interface IPort
 {
-    public function searchPorts(string $text);
+    public function searchPorts(string $text, int $port = null);
 }

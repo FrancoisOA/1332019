@@ -61,6 +61,6 @@ class QuoteController extends Controller
 
     public function store()
     {
-
+        return request()->all();
     }
 }

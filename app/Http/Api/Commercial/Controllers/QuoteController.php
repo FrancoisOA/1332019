@@ -4,6 +4,7 @@ namespace Acciona\Http\Api\Commercial\Controllers;
 use Acciona\Http\Api\Commercial\Contracts\ICotizacion;
 use Acciona\Http\Api\Commercial\Contracts\IFactor;
 use Acciona\Http\Api\Commercial\Contracts\IUnitMeasure;
+use Acciona\Http\Api\Commercial\Requests\QuoteStoreRequest;
 use Acciona\Http\Api\Comun\Contracts\ICurrency;
 use Acciona\Http\Api\Comun\Contracts\IIncoterm;
 use Acciona\Http\Api\Comun\Contracts\ITypeIncoterm;
@@ -63,9 +64,9 @@ class QuoteController extends Controller
         return $this->responseSuccess($data);
     }
 
-    public function store()
+    public function store(QuoteStoreRequest $request)
     {
-        return request()->all();
+        return $request->all();
     }
 
     public function reportCommercialTracking()

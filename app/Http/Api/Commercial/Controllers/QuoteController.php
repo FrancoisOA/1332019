@@ -1,6 +1,7 @@
 <?php
 namespace Acciona\Http\Api\Commercial\Controllers;
 
+use Acciona\Http\Api\Commercial\Contracts\ICotizacion;
 use Acciona\Http\Api\Commercial\Contracts\IFactor;
 use Acciona\Http\Api\Commercial\Contracts\IUnitMeasure;
 use Acciona\Http\Api\Commercial\Requests\QuoteStoreRequest;
@@ -13,6 +14,7 @@ use Acciona\Http\Controllers\Controller;
 
 class QuoteController extends Controller
 {
+    protected $ICotizacion;
     protected $IFactor;
     protected $IUnitMeasure;
     protected $ICurrency;
@@ -21,7 +23,8 @@ class QuoteController extends Controller
     protected $ITypeIncoterm;
     protected $IVia;
 
-    public function __construct(IFactor $IFactor,
+    public function __construct(ICotizacion $ICotizacion,
+                                IFactor $IFactor,
                                 IUnitMeasure $IUnitMeasure,
                                 ICurrency $ICurrency,
                                 IUser $IUser,
@@ -31,6 +34,7 @@ class QuoteController extends Controller
     {
         $this->ITypeIncoterm= $ITypeIncoterm;
         $this->IUnitMeasure = $IUnitMeasure;
+        $this->ICotizacion  = $ICotizacion;
         $this->IIncoterm    = $IIncoterm;
         $this->ICurrency    = $ICurrency;
         $this->IFactor      = $IFactor;
@@ -63,5 +67,10 @@ class QuoteController extends Controller
     public function store(QuoteStoreRequest $request)
     {
         return $request->all();
+    }
+
+    public function reportCommercialTracking()
+    {
+        return $this->ICotizacion->getCommercialTracking([]);
     }
 }

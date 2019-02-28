@@ -23,4 +23,7 @@ class ExportController extends Controller
         $data = $this->IComment->reportCustomerTracking($rangeDate);
         return $this->excel->download(new CustomerTrackingExport($data), 'customer-tracking.xlsx', Excel::XLSX);
     }
+
+    public function exportCommercialTracking()
+    {}
 }

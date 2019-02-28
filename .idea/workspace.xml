@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5adf66e-614f-4e71-a751-7e8087e293d7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Api/Commercial/Requests/QuoteStoreRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Commercial/Requests/ClientStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Commercial/Requests/ClientStoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Commercial/Routes/api-web.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Commercial/Routes/api-web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +20,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+            <state relative-caret-position="360">
+              <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
                 <element signature="e#58#108#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/ClientController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -38,20 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/ClientController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Requests/ClientStoreRequest.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Requests/QuoteStoreRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+            <state relative-caret-position="153">
+              <caret line="18" column="48" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="18" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -100,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Contracts/IClient.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Contracts/IClientDataSunat.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Contracts/IClientExtraData.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Repositories/RepoClientDataSunat.php" />
@@ -148,9 +147,10 @@
         <option value="$PROJECT_DIR$/app/Http/Api/Comun/Contracts/IVia.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Comun/Repositories/RepoVia.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Comun/Providers/ServiceOrchestration.php" />
-        <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Routes/api-web.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Requests/ClientStoreRequest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Requests/QuoteStoreRequest.php" />
       </list>
     </option>
   </component>
@@ -260,7 +260,7 @@
       <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="33" />
     <option name="y" value="40" />
     <option name="width" value="1024" />
@@ -316,6 +316,15 @@
               <item name="Api" type="462c0819:PsiDirectoryNode" />
               <item name="Commercial" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="Commercial" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="backend" type="b2602c69:ProjectViewProjectNode" />
@@ -394,6 +403,22 @@
               <item name="Models" type="462c0819:PsiDirectoryNode" />
               <item name="Users" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="storage" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -455,15 +480,15 @@
       <workItem from="1549459837200" duration="18590000" />
       <workItem from="1550251321588" duration="17928000" />
       <workItem from="1550527619767" duration="45632000" />
-      <workItem from="1551107821888" duration="5502000" />
+      <workItem from="1551107821888" duration="11959000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="223430000" />
+    <option name="totallyTimeSpent" value="229887000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1380" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1380" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30757576" />
@@ -492,20 +517,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="510" column="20" selection-start-line="510" selection-start-column="20" selection-end-line="510" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Style/Supervisor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/maatwebsite/excel/src/Concerns/WithHeadingRow.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -781,16 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
-          <folding>
-            <element signature="e#58#108#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Api/Comun/Contracts/IVia.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -833,6 +834,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Requests/ClientStoreRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="48" column="5" selection-start-line="12" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Routes/api-web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -840,17 +848,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/ClientController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="360">
+          <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
+          <folding>
+            <element signature="e#58#108#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Requests/ClientStoreRequest.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/ClientController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
+        <state relative-caret-position="51">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/cors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Requests/QuoteStoreRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="16" selection-start-column="12" selection-end-line="18" selection-end-column="48" />
         </state>
       </provider>
     </entry>

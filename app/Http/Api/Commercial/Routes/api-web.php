@@ -20,5 +20,11 @@ Route::group(['prefix' => 'commercial'], function ()
         Route::post('export', 'ExportController@export');
     });
 
-    Route::resource('quote', 'QuoteController')->only(['create', 'store']);
+    //Route::resource('quote', 'QuoteController')->only(['create', 'store']);
+    Route::group(['prefix' => 'quote'], function ()
+    {
+        Route::resource('', 'QuoteController')->only(['create', 'store']);
+        Route::post('commercial-tracking', 'QuoteController@reportCommercialTracking');
+        Route::post('export', 'ExportController@exportCommercialTracking');
+    });
 });

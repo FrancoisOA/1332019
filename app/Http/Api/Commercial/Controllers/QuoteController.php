@@ -76,6 +76,11 @@ class QuoteController extends Controller
     public function reportCommercialTracking()
     {
         $data = $this->ICotizacion->getCommercialTracking(request()->all());
+        $data = collect($data)->map(function ($x) {
+            $x->via = html_entity_decode($x->via);
+            $x->observations = html_entity_decode($x->observations);
+            return $x;
+        });
         return $this->responseSuccess($data);
     }
 }

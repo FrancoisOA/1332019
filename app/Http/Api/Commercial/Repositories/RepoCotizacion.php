@@ -14,19 +14,15 @@ class RepoCotizacion implements ICotizacion
     }
 
     public function getCommercialTracking(array $params) {
-        /*$user_id       = $params['user_id'];
+        $user_id       = $params['user_id'];
         $commercial_id = $params['commercial_id'];
-        $dateRange     = $params['dateRange'];*/
-
-        $user_id       = null;
-        $commercial_id = null;
-        $dateRange     = ['2019-01-30T05:00:00.000Z', '2019-03-01T05:00:00.000Z'];
+        $dateRange     = $params['dateRange'];
 
         $query = "select distinct cot.f_creacion,
                CONCAT(dat.v_servicioid, lpad((EXTRACT(MONTH FROM cot.f_creacion))::text, 2, '0'::text), EXTRACT(YEAR FROM cot.f_creacion), '-', det.n_correlativo) as code,
                cot.f_enviado_comercial, concat(u.v_nombre, ' ', u.v_apellido_paterno, ' ', u.v_apellido_materno) as user_name,
                com.v_razon_social as commercial, dat.v_cliente as client, dat.v_contacto as contact,
-               CASE WHEN dat.n_via = '1' THEN 'Aéreo' ELSE 'Marítimo' END as via,
+               dat.v_via as via,
                CASE WHEN dat.n_via = '2' THEN dat.v_tipo ELSE '' END as type, dat.v_text_obs_general as observations
         from comercial.tbl_cotizacion as cot
         inner join comercial.tbl_detallecotizacion as det

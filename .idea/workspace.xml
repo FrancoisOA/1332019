@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5adf66e-614f-4e71-a751-7e8087e293d7" name="Default Changelist" comment="" />
+    <list default="true" id="d5adf66e-614f-4e71-a751-7e8087e293d7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Api/Commercial/Repositories/RepoCotizacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Commercial/Repositories/RepoCotizacion.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="78" column="43" selection-start-line="77" selection-start-column="8" selection-end-line="78" selection-end-column="45" />
+            <state relative-caret-position="417">
+              <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -25,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Repositories/RepoCotizacion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+            <state relative-caret-position="281">
+              <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
               <folding>
                 <element signature="e#59#113#0#PHP" expanded="true" />
               </folding>
@@ -55,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Routes/api-web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -153,16 +156,16 @@
         <option value="$PROJECT_DIR$/app/Http/Api/Principal/Repositories/RepoCliPro.php" />
         <option value="$PROJECT_DIR$/app/Models/Comercial/DetalleCotizacion.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Principal/Routes/api-web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Principal/Contracts/IUser.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Principal/Controllers/UserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Principal/Repositories/RepoUser.php" />
         <option value="$PROJECT_DIR$/resources/views/exports/excels/comments-by-client.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/ExportController.php" />
         <option value="$PROJECT_DIR$/app/Exports/CommercialTrackingExport.php" />
-        <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Repositories/RepoCotizacion.php" />
         <option value="$PROJECT_DIR$/resources/views/exports/excels/commercial-tracking.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Routes/api-web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Repositories/RepoCotizacion.php" />
+        <option value="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php" />
       </list>
     </option>
   </component>
@@ -491,10 +494,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="246012000" />
+    <option name="totallyTimeSpent" value="247667000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="1358" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -843,13 +847,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="78" column="43" selection-start-line="77" selection-start-column="8" selection-end-line="78" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Api/Principal/Routes/api-web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -881,16 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Repositories/RepoCotizacion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-          <folding>
-            <element signature="e#59#113#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/exports/excels/commercial-tracking.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -900,8 +887,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Routes/api-web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Repositories/RepoCotizacion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="e#59#113#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
         </state>
       </provider>
     </entry>

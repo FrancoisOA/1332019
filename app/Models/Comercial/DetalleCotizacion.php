@@ -1,6 +1,7 @@
 <?php
 namespace Acciona\Models\Comercial;
 
+use Acciona\Models\Users\User;
 use Illuminate\Database\Eloquent\Model;
 
 class DetalleCotizacion extends Model
@@ -11,5 +12,10 @@ class DetalleCotizacion extends Model
     public function dato()
     {
         return $this->hasOne(DatoCotizacion::class, 'detalleid', 'detalleid');
+    }
+
+    public function user()
+    {
+        return $this->hasOne(User::class, 'usersid', 'usersid');
     }
 }

@@ -25,4 +25,18 @@ class RepoCliPro implements ICliPro
                     ->where($whereData)
                     ->get();
     }
+
+    public function getCommercials(int $company_Id)
+    {
+        $whereData = [
+            ['v_estado', 'ACTIVADO'],
+            ['b_comisionista', true],
+            ['b_trabajador', true],
+            ['companyid', $company_Id],
+        ];
+        return $this->model
+                    ->select('cli_proid as code', 'v_razon_social as description')
+                    ->where($whereData)
+                    ->get();
+    }
 }

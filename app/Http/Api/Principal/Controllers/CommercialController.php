@@ -1,21 +1,22 @@
 <?php
 namespace Acciona\Http\Api\Principal\Controllers;
 
+use Acciona\Http\Api\Principal\Contracts\ICliPro;
 use Acciona\Http\Api\Principal\Contracts\IUser;
 use Acciona\Http\Controllers\Controller;
 
 class CommercialController extends Controller
 {
-    protected $IUser;
+    protected $ICliPro;
 
-    public function __construct(IUser $IUser)
+    public function __construct(ICliPro $ICliPro)
     {
-        $this->IUser = $IUser;
+        $this->ICliPro = $ICliPro;
     }
 
     public function getAllCommercials(int $companyId)
     {
-        $data = $this->IUser->getUserByCargo($companyId, [2]);
+        $data = $this->ICliPro->getCommercials($companyId);
         return $this->responseSuccess($data);
     }
 }

@@ -9,12 +9,14 @@ use Acciona\Http\Api\Comun\Contracts\ICurrency;
 use Acciona\Http\Api\Comun\Contracts\IIncoterm;
 use Acciona\Http\Api\Comun\Contracts\ITypeIncoterm;
 use Acciona\Http\Api\Comun\Contracts\IVia;
+use Acciona\Http\Api\Principal\Contracts\ICliPro;
 use Acciona\Http\Api\Principal\Contracts\IUser;
 use Acciona\Http\Controllers\Controller;
 
 class QuoteController extends Controller
 {
     protected $ICotizacion;
+    protected $ICliPro;
     protected $IFactor;
     protected $IUnitMeasure;
     protected $ICurrency;
@@ -24,6 +26,7 @@ class QuoteController extends Controller
     protected $IVia;
 
     public function __construct(ICotizacion $ICotizacion,
+                                ICliPro $ICliPro,
                                 IFactor $IFactor,
                                 IUnitMeasure $IUnitMeasure,
                                 ICurrency $ICurrency,
@@ -40,6 +43,7 @@ class QuoteController extends Controller
         $this->IFactor      = $IFactor;
         $this->IUser        = $IUser;
         $this->IVia         = $IVia;
+        $this->ICliPro      = $ICliPro;
     }
 
     public function create()
@@ -48,7 +52,7 @@ class QuoteController extends Controller
         $factors         = $this->IFactor->all();
         $unitsOfMeasured = $this->IUnitMeasure->all();
         $currencies      = $this->ICurrency->all();
-        $commercials     = $this->IUser->getUserByCargo($request['company_id'], [2, 26]);
+        $commercials     = $this->ICliPro->getCommercials($request['company_id']);
         $incoterms       = $this->IIncoterm->getAll();
         $typeIncoterms   = $this->ITypeIncoterm->getAll();
         $vias            = $this->IVia->getAll();
@@ -71,6 +75,7 @@ class QuoteController extends Controller
 
     public function reportCommercialTracking()
     {
-        return $this->ICotizacion->getCommercialTracking([]);
+        $data = $this->ICotizacion->getCommercialTracking(request()->all());
+        return $this->responseSuccess($data);
     }
 }

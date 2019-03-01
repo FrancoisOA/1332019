@@ -23,8 +23,5 @@
             <td>{{ $comment->type_register === 'cite' ? $comment->date : '' }}</td>
         </tr>
     @endforeach
-    <tr>
-        <th><img src="{{URL::asset('images/logo.png')}}"></th>
-    </tr>
     </tbody>
 </table>

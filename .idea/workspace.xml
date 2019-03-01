@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5adf66e-614f-4e71-a751-7e8087e293d7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Exports/CommercialTrackingExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Api/Principal/Controllers/UserController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/exports/excels/commercial-tracking.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/ExportController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/ExportController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Commercial/Controllers/QuoteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Commercial/Repositories/RepoCotizacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Commercial/Repositories/RepoCotizacion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Commercial/Routes/api-web.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Commercial/Routes/api-web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Principal/Contracts/ICliPro.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Principal/Contracts/ICliPro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Principal/Contracts/IUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Principal/Contracts/IUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Principal/Controllers/CommercialController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Principal/Controllers/CommercialController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Principal/Repositories/RepoCliPro.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Principal/Repositories/RepoCliPro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Principal/Repositories/RepoUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Principal/Repositories/RepoUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Api/Principal/Routes/api-web.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Api/Principal/Routes/api-web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Comercial/Cotizacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comercial/Cotizacion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Comercial/DetalleCotizacion.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comercial/DetalleCotizacion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/exports/excels/comments-by-client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exports/excels/comments-by-client.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="d5adf66e-614f-4e71-a751-7e8087e293d7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Routes/api-web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="493">
+              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -291,11 +272,11 @@
       <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1358" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="1282" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
-    <option name="height" value="705" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -505,16 +486,15 @@
       <workItem from="1550251321588" duration="17928000" />
       <workItem from="1550527619767" duration="45632000" />
       <workItem from="1551107821888" duration="11959000" />
-      <workItem from="1551376447493" duration="19053000" />
+      <workItem from="1551376447493" duration="19733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245332000" />
+    <option name="totallyTimeSpent" value="246012000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="1358" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2375189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -920,8 +900,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Api/Commercial/Routes/api-web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="493">
+          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
         </state>
       </provider>
     </entry>
